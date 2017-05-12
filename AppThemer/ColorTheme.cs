@@ -13,9 +13,10 @@ namespace AppThemer {
         public virtual Color LightAccentColor { get { return Color.FromArgb(21, 180, 252); } }
         public virtual Color AccentColor { get { return Color.FromArgb(33, 150, 243); } }
         public virtual Color DarkAccentColor { get { return Color.FromArgb(2, 117, 169); } }
-
+        
         // Default
-        public abstract Color BackColor { get; }
+        public abstract Color WindowBackColor { get; }
+        public abstract Color ControlBackColor { get; }
         public abstract Color ForeColor { get; }
 
         // MouseEnter
@@ -23,7 +24,7 @@ namespace AppThemer {
         public virtual Color MouseEnterForeColor { get { return ForeColor; } }
 
         // MouseLeave
-        public virtual Color MouseLeaveBackColor { get { return BackColor; } }
+        public virtual Color MouseLeaveBackColor { get { return LightColor; } }
         public virtual Color MouseLeaveForeColor { get { return ForeColor; } }
 
         // MouseDown

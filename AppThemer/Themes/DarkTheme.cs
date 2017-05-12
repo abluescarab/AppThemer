@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 
 namespace AppThemer.Themes {
     public class DarkTheme : ColorTheme {
@@ -7,7 +8,8 @@ namespace AppThemer.Themes {
         public override Color LightLightColor { get { return Color.FromArgb(74, 74, 74); } }
         public override Color LightColor { get { return Color.FromArgb(60, 60, 60); } }
 
-        public override Color BackColor { get { return DarkColor; } }
+        public override Color WindowBackColor { get { return DarkDarkColor; } }
+        public override Color ControlBackColor { get { return DarkColor; } }
 
         public override Color ForeColor { get { return Color.White; } }
     }

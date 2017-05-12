@@ -12,31 +12,11 @@ namespace AppThemer {
 
         // MenuStripGradient
         public override Color MenuStripGradientBegin {
-            get {
-                if(theme.GetType() == typeof(DarkTheme)) {
-                    return theme.DarkDarkColor;
-                }
-                else if(theme.GetType() == typeof(LightTheme)) {
-                    return theme.LightLightColor;
-                }
-                else {
-                    return theme.BackColor;
-                }
-            }
+            get { return theme.WindowBackColor; }
         }
 
         public override Color MenuStripGradientEnd {
-            get {
-                if(theme.GetType() == typeof(DarkTheme)) {
-                    return theme.DarkDarkColor;
-                }
-                else if(theme.GetType() == typeof(LightTheme)) {
-                    return theme.LightLightColor;
-                }
-                else {
-                    return theme.BackColor;
-                }
-            }
+            get { return MenuStripGradientBegin; }
         }
 
         // MenuItemSelected
@@ -78,7 +58,7 @@ namespace AppThemer {
 
         // ToolStripDropDown
         public override Color ToolStripDropDownBackground {
-            get { return theme.BackColor; }
+            get { return theme.WindowBackColor; }
         }
 
         // ImageMarginGradient

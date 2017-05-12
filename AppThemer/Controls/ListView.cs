@@ -11,7 +11,7 @@ namespace AppThemer.Controls {
         }
 
         public void SetTheme(ColorTheme theme) {
-            BackColor = theme.BackColor;
+            BackColor = theme.ControlBackColor;
             ForeColor = theme.ForeColor;
             selectedItemBackColor = theme.MouseEnterBackColor;
         }

@@ -7,7 +7,7 @@
         }
 
         public void SetTheme(ColorTheme theme) {
-            BackColor = theme.LightColor;
+            BackColor = theme.ControlBackColor;
             ForeColor = theme.ForeColor;
             FlatAppearance.MouseDownBackColor = theme.MouseDownBackColor;
             FlatAppearance.MouseOverBackColor = theme.MouseEnterBackColor;

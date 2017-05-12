@@ -7,7 +7,8 @@ namespace AppThemer.Themes {
         public override Color LightLightColor { get { return Color.FromArgb(255, 238, 238, 238); } }
         public override Color LightColor { get { return Color.FromKnownColor(KnownColor.Gainsboro); } }
 
-        public override Color BackColor { get { return LightColor; } }
+        public override Color WindowBackColor { get { return LightLightColor; } }
+        public override Color ControlBackColor { get { return LightColor; } }
 
         public override Color ForeColor { get { return Color.FromKnownColor(KnownColor.ControlText); } }
     }
